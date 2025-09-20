@@ -30,7 +30,7 @@ body{
     background-image: var(--logo-color);
     color: transparent;
     background-clip: text;
-    translate: 15px;px ;
+    translate: 15px;
 }
 #minih{
     width: 100px;
@@ -437,13 +437,16 @@ input:hover{
 }
 /* navdropdown */
 /* Dropdown wrapper stays inline */
-
+.dropdown {
+  position: relative;
+  display: inline-block; /* keep it next to other nav items */
+}
 
 /* Dropdown box floats over sidebar */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 0%;        /* directly below the button */
+    top: 100%;        /* directly below the button */
     right:10px;       /* align with button */
     background-color: var(--bg-color);
     min-width: 160px;
