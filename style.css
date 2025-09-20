@@ -116,14 +116,15 @@ nav{
     display: flex;
     flex-wrap: wrap;           /* ✅ allows wrapping */
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
     background:none;
     
     /* margin-top: 0px; */
     border-radius: 10px;
     
 }
-input[type="search"]{
+input[type="search"] {
     max-width: 300px;
     flex: 1 1 200px; 
     height: 40px;
@@ -149,9 +150,10 @@ input[type="button"]{
     font-weight: bold;
     width: 100px;
     height: 40px;
-    margin-left: 90px ;
+    margin-top: 10px;
+    margin-left:50px;
     margin-bottom: 10px;
-    padding: 0px 150px 0px 80px;
+    padding: 0px 130px 0px 60px;
     border-radius: 10px;
     cursor: pointer;
     flex: 0 0 auto;
@@ -162,25 +164,18 @@ input[type="button"]:hover{
     transition: 0.3s;
     transform: scale(1.1);
 }
-/* 
-nav a{
+
+a{
     list-style: none;
-    text-decoration: none;
+    
     color: rgb(255, 255, 255);
     font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
+}
+a:hover{
+    color: var(--hover-color);
     
-    padding-top: 10px;
-    flex: 0 0 auto;
     
 }
-nav a:hover{
-    color: var(--hover-color);
-    transition: 0.3s;
-    transform: scale(1.1);
-    border: 1px solid var(--border-color);
-} */
 .content{
     width: 50%;
     height: 50vh;
@@ -324,4 +319,73 @@ h1 span:nth-child(3){
             transition: 0.3s;
             transform: scale(1.05);
         }
+/* login index */
+.loginbody{
+    display: flex;
+    align-items: center;
+    
+    
+    justify-content: center;
+    height: 100vh;
+    
+    background-image: url('bg1.jpg');
+    background-size:contain;
+    background-position: center;
+}
+.father{
+    display: flex;
+    border-radius: 25px;
+    width: 25vw;
+    min-height: 30vw;
+    background-color: rgb(228, 225, 225);
+    box-shadow: 0px 0px 6px .4px black;
+    background: transparent;
+    
 
+}
+.parent{
+    background: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    
+    
+    padding: 29px;
+    border-radius: 25px;
+    width: 100%;
+    box-shadow: 0px 0px 6px .4px black;
+    
+    
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: eyee-dropper;
+    
+
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    margin-top: 20px;
+
+}
+button:hover{
+    background-color: var(--hover-color);
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+input:hover{
+    border: 2px solid var(--hover-color);
+    transition: 0.3s;
+    transform: scale(1.05);
+}
