@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
@@ -7,17 +8,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
         <div class="sidebar">
             <div class="menu">
-            <h1 class="logo">MUSIC</h1>
-            <h4 id="minih">MENU</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Library</a></li>
-            </ul>
+                <h1 class="logo">MUSIC</h1>
+                <h4 id="minih">MENU</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Library</a></li>
+                </ul>
             </div>
             <div class="playlists">
                 <h4 id="minih">PLAYLISTS</h4>
@@ -28,368 +30,627 @@
                 </ul>
             </div>
         </div>
-    <header>
-        <div class="container1">
-            <nav>
-                <input type="search" placeholder="Search your Music ,artist...">
-                <!-- <a href="#">ABOUT</a>
+        <header>
+            <div class="container1">
+                <nav>
+                    <input type="search" placeholder="Search your Music ,artist...">
+                    <!-- <a href="#">ABOUT</a>
                 <a href="#">PREMIUM</a> -->
-                <input style="border: none;" type="button" value="ABOUT" name="about" id="about">
-                <input style="border: none; " type="button" value="PREMIUM" name="premium" id="premium">
-                <label for="login"></label>
-                <a href="login.html"><input type="button" value="LOGIN" name="login" id="login"></a>
-                
-                <label for="signup"></label>
-                <a href="signup.html"><input style="background-color: var(--accent-color);" type="button" value="SIGNUP" id="signup"></a>
-                
-            </nav>
-            <div class="content">
-                <div style="display: flex;">
-                
-                    <h1>
-                        <span>All the </span>
-                        <span>BEST</span>
-                        <span>songs at one place</span>
-                    </h1>
+                    <div class="dropdown">
+                        <input style="border: none;" type="button" value="ABOUT" name="about" id="about">
+
+                        <div class="dropdown-content">
+                            <a href="#">Our Team</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Mission</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <input style="border: none; " type="button" value="PREMIUM" name="premium" id="premium">
+                        <div class="dropdown-content">
+                            <a href="#">Plans</a>
+                            <a href="#">Features</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                    <label for="login"></label>
+                    <a href="login.html"><input type="button" value="LOGIN" name="login" id="login"></a>
+
+                    <label for="signup"></label>
+                    <a href="signup.html"><input style="background-color: var(--accent-color);" type="button"
+                            value="SIGNUP" id="signup"></a>
+
+                </nav>
+                <div class="quote">
+                    <div style="display: flex;">
+
+                        <h1>
+                            <span>All the </span>
+                            <span>BEST</span>
+                            <span>songs at one place</span>
+                        </h1>
+                    </div>
+                    <p>On our website, you can access an amazing collection of popular and new songs. Stream your
+                        favorite tracks in high quality and enjoy without interruptions. Whatever your taste in music,
+                        we have it all for you!</p>
+                    <input type="button" value="DISCOVER NOW">
+
                 </div>
-                <p>On our website, you can access an amazing collection of popular and new songs. Stream your favorite tracks in high quality and enjoy without interruptions. Whatever your taste in music, we have it all for you!</p>
-                <input type="button" value="DISCOVER NOW">
+        </header>
+        <main>
+            <div class="container2">
+                <div class="strip1">
+                    <div class="ttl">
+                        <h1>
+                            <span>Weekly</span>
+                            <span>Top</span>
+                            <span>Songs</span>
+                        </h1>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container2">
+                <div class="strip1">
+                    <div class="ttl">
+                        <h1>
+                            <span>Top</span>
+                            <span>Replayed<span>
+                                    <span>Songs</span>
+                        </h1>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image">
+                                <img width="188"
+                                    src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                                    alt="">
+                            </div>
+                            <div class="cardcontent">
+                                <h3>Song Name</h3>
+                                <p>Artist Name</p>
+                                <input type="button" value="PLAY">
+
+                            </div>
+                            <div class="card-dropdown">
+                                <ul>
+                                    <li>Song 1 <button>▶</button></li>
+                                    <li>Song 2 <button>▶</button></li>
+                                    <li>Song 3 <button>▶</button></li>
+                                    <li>Song 4 <button>▶</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-    </header>
-    <main>
-        <div class="container2">
-            <div class="strip1">
-                <div class="ttl">
-                <h1 >
-                    <span>Weekly</span>
-                    <span>Top</span>
-                    <span>Songs</span>
-                </h1>
-                </div>
-                
-                <div class="cards">
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                     </div>
-                        
-                </div>              
     </div>
     <div class="container2">
-            <div class="strip1">
-                <div class="ttl">
-                <h1 >
-                    <span>Top</span>
-                    <span>Replayed<span>
-                    <span>Songs</span>
-                </h1>
-                </div>
-            
-                <div class="cards">
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                        </div>
-                    </div>    
-                     </div>
-                        
-                </div>              
-    </div>
-        <div class="container2">
-            <div class="strip1">
-                <div class="ttl">
-                <h1 >
+        <div class="strip1">
+            <div class="ttl">
+                <h1>
                     <span>Most</span>
                     <span>Liked</span>
                     <span>Songs</span>
                 </h1>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="cards">
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
                     </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
                     </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
                     </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                     </div>
-                        
-                </div>              
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <div class="container2">
-            <div class="strip1">
-                <div class="ttl">
-                <h1 >
+        <div class="strip1">
+            <div class="ttl">
+                <h1>
                     <span>Todays</span>
                     <span>Trending</span>
                     <span>Songs</span>
                 </h1>
-                </div>
-            
-                <div class="cards">
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                    </div>    
-                        <div class="card"> 
-                        <div class="image">
-                            <img width="188" src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg" alt="">
-                        </div>
-                        <div class="cardcontent">
-                            <h3>Song Name</h3>
-                            <p>Artist Name</p>
-                            <input type="button" value="PLAY">
-                            
-                        </div>
-                        </div>
-                    </div>    
-                     </div>
-                        
-                </div>              
-    </div>
+            </div>
 
-    
-                
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img width="188"
+                            src="https://thumbs.dreamstime.com/b/colored-neon-music-note-illustration-bokeh-abstract-background-digital-theme-notes-disco-lights-glowing-colorful-350184151.jpg"
+                            alt="">
+                    </div>
+                    <div class="cardcontent">
+                        <h3>Song Name</h3>
+                        <p>Artist Name</p>
+                        <input type="button" value="PLAY">
+
+                    </div>
+                    <div class="card-dropdown">
+                        <ul>
+                            <li>Song 1 <button>▶</button></li>
+                            <li>Song 2 <button>▶</button></li>
+                            <li>Song 3 <button>▶</button></li>
+                            <li>Song 4 <button>▶</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
+    </div>
+    </div>
+
+
+
+    </div>
+    </div>
     </main>
-</div>
+    </div>
 </body>
+
 </html>
