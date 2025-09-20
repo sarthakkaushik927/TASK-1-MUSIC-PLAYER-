@@ -150,6 +150,7 @@ input[type="button"]{
     width: 100px;
     height: 40px;
     margin-left: 90px ;
+    margin-bottom: 10px;
     padding: 0px 150px 0px 80px;
     border-radius: 10px;
     cursor: pointer;
@@ -161,7 +162,7 @@ input[type="button"]:hover{
     transition: 0.3s;
     transform: scale(1.1);
 }
-
+/* 
 nav a{
     list-style: none;
     text-decoration: none;
@@ -169,7 +170,7 @@ nav a{
     font-size: 20px;
     font-weight: bold;
     padding: 5px;
-    margin-left: 70px ;
+    
     padding-top: 10px;
     flex: 0 0 auto;
     
@@ -179,7 +180,7 @@ nav a:hover{
     transition: 0.3s;
     transform: scale(1.1);
     border: 1px solid var(--border-color);
-}
+} */
 .content{
     width: 50%;
     height: 50vh;
