@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="signup-body">
+    <input type="checkbox" id="sidebar-toggle" hidden>
+    
+    
     <div class="main">
         <div class="sidebar">
             <div class="menu">
@@ -29,8 +32,22 @@
                 </ul>
             </div>
         </div>
+        <nav class="login-navbar navbar">
+    <!-- Toggle button -->
+    <label for="sidebar-toggle" class="toggle-btn">☰</label>
+                    
+                    <!-- <a href="#">ABOUT</a>
+                <a href="#">PREMIUM</a> -->
+                    
+                    <label for="login"></label>
+                    <a href="login.html"><input type="button" value="LOGIN" name="login" id="login"></a>
 
-        <div class="loginbody">
+                    <label for="signup"></label>
+                    <a href="signup.html"><input style="background-color: var(--accent-color);" type="button"
+                            value="SIGNUP" id="signup"></a>
+
+                </nav>
+        <div class="signupbody">
             <div class="father">
                 <div class="parent">
                     <form action="post">

@@ -23,6 +23,19 @@ body{
     display: flex;
     flex-direction: column;
 }
+.login-body{
+    /* background-image: url('https://png.pngtree.com/background/20250116/original/pngtree-musical-instruments-on-black-background-picture-image_16019162.jpg'); */
+    background-position: center;
+    background-image: url('https://png.pngtree.com/background/20250124/original/pngtree-a-cat-listening-music-with-headphone-picture-image_15492402.jpg');
+    background-size:cober;
+    
+}
+.signup-body{
+    background-image: url('https://t4.ftcdn.net/jpg/12/84/72/43/360_F_1284724371_3jMSL2NoxquX5fzTxiKgSkI7aQEJPxfr.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
 
 .logo {
     width: 100px;
@@ -93,11 +106,15 @@ ul li a:active{
     
     margin: 20px;
     padding: 20px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     border-radius: 40px;
 }
+.main{
+    transition: margin-left 0.3s ease;
+    margin-left: 160px; /* same as sidebar width */
+}
 .sidebar{
-    width: 10%;
+    min-width: 160px;
     height: 100vh;
     background-color: var(--bg-color);
     position: fixed;
@@ -109,7 +126,38 @@ ul li a:active{
     padding: 20px;
     border-right: 2px solid var(--border-color);
     padding-left: 0%;
+    transition: transform 0.3s ease;
+
+}
+/* Toggle button */
+.toggle-btn {
     
+    
+   
+    font-size: 24px;
+    background: transparent;
+    color: var(--border-color);
+    border: 2px solid var(--border-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 10px;
+    
+}
+.toggle-btn:hover{
+    color: var(--hover-color);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* Hide sidebar when checkbox unchecked */
+#sidebar-toggle:not(:checked) ~ .main .sidebar {
+    transform: translateX(-100%);
+}
+
+/* Shift main content when sidebar hidden */
+#sidebar-toggle:not(:checked) ~ .main {
+    margin-left: 0;
 }
 nav{
     
@@ -124,7 +172,7 @@ nav{
     border-radius: 10px;
     
 }
-input[type="search"] {
+.navbar input[type="search"] {
     max-width: 300px;
     flex: 1 1 200px; 
     height: 40px;
@@ -137,12 +185,12 @@ input[type="search"] {
     background-color:   var(--bg-color);
     color: rgb(255, 255, 255);
 }
-input[type="search"]:hover{
+.navbar input[type="search"]:hover{
     border: 2px solid var(--hover-color);
     transition: 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-input[type="button"]{
+.navbar input[type="button"]{
     background: transparent;
     border: solid 2px var(--border-color);
     color: rgb(255, 255, 255);
@@ -158,20 +206,20 @@ input[type="button"]{
     cursor: pointer;
     flex: 0 0 auto;
 }
-input[type="button"]:hover{
+.navbar input[type="button"]:hover{
     color: rgb(0, 0, 0);
     background-color: var(--accent-color);
     transition: 0.3s;
     transform: scale(1.1);
 }
 
-a{
+.parent a{
     list-style: none;
     
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
-a:hover{
+.parent a:hover{
     color: var(--hover-color);
     
     
@@ -201,6 +249,10 @@ a:hover{
     cursor: pointer;
 
 }
+.quote input[type="button"]:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 h1 span:nth-child(1){
     color: var(--child1-color);
 }
@@ -213,7 +265,7 @@ h1 span:nth-child(3){
 .container2{
     /* width: 100%; */
     height: 40vh;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     margin-top: 20px;
     padding: 10px;
     padding-left: 20px;
@@ -267,7 +319,7 @@ h1 span:nth-child(3){
             
         }
         
-
+/* carddropdown */
 .card-dropdown {
   display: none;
   position: absolute;
@@ -287,10 +339,11 @@ h1 span:nth-child(3){
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 85%;
 }
 
 .card-dropdown li {
-  margin: 8px 0;
+  margin: 7px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -348,11 +401,12 @@ h1 span:nth-child(3){
         .cardcontent input[type="button"]{
             background-color: var(--accent-color);
             color: rgb(255, 255, 255);
+            
             font-size: 14px;
             font-weight: bold;
             width: 100%;
             height: 30px;
-            margin-top: 20px;
+            margin-top: 0px;
             margin-bottom: 0px;
             margin-left: 0px;
             padding: 5px;   
@@ -369,22 +423,32 @@ h1 span:nth-child(3){
 .loginbody{
     display: flex;
     align-items: center;
-    
+    margin-top: 100px;
     
     justify-content: center;
-    height: 100vh;
     
-    background-image: url('bg1.jpg');
-    background-size:contain;
-    background-position: center;
+    
+    
+    
+}
+.signupbody{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+    justify-content: center;
+    
+    
+    
+    
 }
 .father{
     display: flex;
     border-radius: 25px;
     width: 25vw;
-    min-height: 30vw;
+    min-height: 30vh;
     background-color: rgb(228, 225, 225);
-    box-shadow: 0px 0px 6px .4px black;
+    box-shadow: 0px 0px 6px .6px black;
     background: transparent;
     
 
@@ -402,21 +466,22 @@ h1 span:nth-child(3){
     
     
 }
-form{
+.parent form{
     display: flex;
     flex-direction: column;
     gap: 20px;
     color: white;
 }
-input {
+.parent input {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    cursor: eyee-dropper;
+    cursor: eye-dropper;
+   
     
 
 }
-button{
+.parent button{
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -425,12 +490,12 @@ button{
     margin-top: 20px;
 
 }
-button:hover{
+.parent button:hover{
     background-color: var(--hover-color);
     transition: 0.3s;
     transform: scale(1.05);
 }
-input:hover{
+.parent input:hover{
     border: 2px solid var(--hover-color);
     transition: 0.3s;
     transform: scale(1.05);
@@ -472,4 +537,130 @@ input:hover{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* carddropdown */
+/* 📱 Small screens (mobile) */
+@media (max-width: 600px) {
+
+  /* Sidebar stays fixed 👈 no shrink/hide */
+
+  /* Main containers should not overflow */
+  .container1, 
+  .container2 {
+    margin-left: 20%;  /* keep same sidebar space */
+    width: 80%;        /* adjust remaining space */
+  }
+
+  /* Too many nav buttons? Hide some */
+  nav input[type="button"]:not(:first-child) {
+    display: none;   /* show only 1 important button */
+  }
+
+  /* Cards scroll horizontally instead of wrapping */
+  .cards {
+    flex-wrap: nowrap;          
+    overflow-x: auto;          
+  }
+
+  .card {
+    flex: 0 0 160px;            
+    min-width: 160px;
+    max-width: 160px;
+    height: auto;
+  }
+
+  /* Quote smaller */
+  .quote {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Login/Signup forms scale */
+  .father {
+    width: 90%;
+    min-height: auto;
+  }
+}
+
+/* 📲 Tablets (600px–900px) */
+@media (max-width: 900px) {
+
+  /* Sidebar remains same size 👈 */
+
+  .container1, 
+  .container2 {
+       /* keep aligned with sidebar */
+    width: 70%;
+  }
+
+  /* Nav buttons smaller */
+  nav input[type="button"] {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+
+  /* Cards wrap into 2 per row */
+  .card {
+    min-width: 180px;
+    max-width: 45%;
+  }
+}
+/* music card */
+.music-card{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-color);
+    color: white;
+    padding: 20px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+.music-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.music-controls input[type="button"]{
+    background-color: rgb(255, 255, 255,0.5);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px;
+    padding: 4px;
+    margin-top: 0px;
+    
+}
+.music-card img{
+    border-radius: 10%;
+    margin-right: 20px; 
+    
+}
+.music-time{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 30px;
+}
+.login-sidebar{
+   transform: translate(40px, 40px);
+   display: hidden;
+}
+.login-navbar{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+}
