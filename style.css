@@ -476,7 +476,7 @@ h1 span:nth-child(3){
     padding: 10px;
     border-radius: 10px;
     border: none;
-    cursor: eye-dropper;
+    cursor: eyedropper;
    
     
 
@@ -537,74 +537,7 @@ h1 span:nth-child(3){
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* 📱 Small screens (mobile) */
-@media (max-width: 600px) {
 
-  /* Sidebar stays fixed 👈 no shrink/hide */
-
-  /* Main containers should not overflow */
-  .container1, 
-  .container2 {
-    margin-left: 20%;  /* keep same sidebar space */
-    width: 80%;        /* adjust remaining space */
-  }
-
-  /* Too many nav buttons? Hide some */
-  nav input[type="button"]:not(:first-child) {
-    display: none;   /* show only 1 important button */
-  }
-
-  /* Cards scroll horizontally instead of wrapping */
-  .cards {
-    flex-wrap: nowrap;          
-    overflow-x: auto;          
-  }
-
-  .card {
-    flex: 0 0 160px;            
-    min-width: 160px;
-    max-width: 160px;
-    height: auto;
-  }
-
-  /* Quote smaller */
-  .quote {
-    width: 100%;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  /* Login/Signup forms scale */
-  .father {
-    width: 90%;
-    min-height: auto;
-  }
-}
-
-/* 📲 Tablets (600px–900px) */
-@media (max-width: 900px) {
-
-  /* Sidebar remains same size 👈 */
-
-  .container1, 
-  .container2 {
-       /* keep aligned with sidebar */
-    width: 70%;
-  }
-
-  /* Nav buttons smaller */
-  nav input[type="button"] {
-    font-size: 14px;
-    padding: 5px 10px;
-    margin-left: 10px;
-  }
-
-  /* Cards wrap into 2 per row */
-  .card {
-    min-width: 180px;
-    max-width: 45%;
-  }
-}
 /* music card */
 .music-card{
     display: flex;
@@ -646,12 +579,13 @@ h1 span:nth-child(3){
     margin-right: 20px; 
     
 }
-.music-time{
-    display: flex;
-    flex-direction: column;
+.time-control input[type="range"]{
+   
     
-    gap: 30px;
+    
+   width: 100%;
 }
+
 .login-sidebar{
    transform: translate(40px, 40px);
    display: hidden;
@@ -664,3 +598,504 @@ h1 span:nth-child(3){
     margin-bottom: 20px;
     background: transparent;
 }
+/* Media query for screens <= 900px */
+@media (max-width: 900px) {
+  /* Show toggle button */
+  .toggle-btn {
+    display: inline-block;
+  }
+
+  /* Sidebar slides over content */
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+
+  /* Sidebar open when checkbox checked */
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+  }
+
+  /* Main content full width */
+  .main, .loginmain, .signupbody {
+    margin-left: 0;
+  }
+
+  /* Optional: hide ABOUT and PREMIUM buttons if present */
+  .navbar #about, .navbar #premium {
+    display: none;
+  }
+
+  /* Cards container scroll horizontally (if present) */
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 15px;
+  }
+
+  /* Prevent vertical scroll */
+  body {
+    overflow-y: hidden;
+  }
+}
+   /* Media Query for screens <= 900px */
+@media (max-width: 900px) {
+
+  /* Show sidebar toggle button */
+  .toggle-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* Sidebar slides over content */
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+  }
+
+  /* Sidebar visible when checkbox checked */
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+  }
+
+  /* Push main content behind sidebar */
+  .main, .loginmain, .signupbody {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Hide ABOUT and PREMIUM buttons in navbar */
+  .navbar #about,
+  .navbar #premium {
+    display: none;
+  }
+
+  /* Make login/signup container bigger & centered */
+  .father, .parent, .loginmain, .signupbody {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+ 
+  /* Optional: adjust form elements */
+  .father input,
+  .father button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 900px) {
+  
+    /* Sidebar: overlay above everything */
+  
+    .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #111;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* Show sidebar when toggle checked */
+  #sidebar-toggle:checked ~ .main .sidebar {
+    transform: translateX(0);
+  }
+
+  /* Dim content behind sidebar */
+  #sidebar-toggle:checked ~ .main::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 900;
+  }
+
+  /* Main content takes full width */
+  .main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  /* Hide ABOUT and PREMIUM */
+  #about, #premium {
+    display: none;
+  }
+
+  /* Cards scroll horizontally */
+  .container2 .cards {
+    display: flex;
+    
+    overflow-x: auto;
+    
+    padding-bottom: 10px;
+  }
+
+  .container2 .card {
+
+    flex: 0 0 23%;
+  }
+  
+  .quote h1 {
+    font-size: 22px;
+  }
+
+  .quote p {
+    font-size: 14px;
+  }
+  
+  .cards {
+    display: flex;           /* row layout */
+    flex-wrap: nowrap;       /* prevent wrapping */
+    overflow-x: auto;        /* horizontal scroll */
+    overflow-y: hidden;      /* no vertical scroll */
+    gap: 20px;               /* spacing between cards */
+    padding-bottom: 10px;    /* scrollbar space */
+    scroll-behavior: smooth; /* smooth swipe */
+    -webkit-overflow-scrolling: touch; /* for iOS smooth scrolling */
+  }
+
+  .card {
+    flex: 0 0 auto;          /* don't shrink or grow */
+    width: 220px;            /* fixed width */
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;      /* prevent horizontal overflow for the page */
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  /* Sidebar comes above content */
+  .main {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: -1; /* move sidebar above header and content */
+  }
+
+  /* Cards horizontal scroll */
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 180px; /* smaller card for mobile */
+  }
+
+  body {
+    overflow-x: hidden; /* prevent horizontal scroll for page */
+  }
+
+  /* Optional: hide about/premium buttons */
+  #about,
+  #premium {
+    display: none;
+  }
+  
+  .music-card, .music-controls  {
+    width: 80%;
+    
+  }
+  .time-control input[type="range"]
+  {
+    width: 70%;
+    
+  }
+  .music-controls input[type="button"]{
+    margin: 10px;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Song List */
+        .song-list {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .song-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .song-item:hover {
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+
+        .song-number {
+            width: 30px;
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .song-cover img{
+            width: 40px;
+            height: 40px;
+            
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .song-info {
+            flex: 1;
+        }
+
+        .song-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 2px;
+            color: var(--text-color);
+        }
+
+        .song-artist {
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .song-date {
+            width: 80px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .song-duration {
+            width: 40px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.6);
+            text-align: right;
+        }
+        /* Playlist Page Styles */
+.playlist-container {
+  padding: 20px;
+  margin-left: 220px; /* space for sidebar */
+}
+
+.playlist-container h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Music strip design */
+.music-strip {
+  display: flex;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  transition: background 0.2s ease;
+}
+
+.music-strip:hover {
+  background: #2a2a2a;
+}
+
+.music-strip img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.song-info {
+  flex: 1;
+  color: white;
+}
+
+.song-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.song-info p {
+  margin: 3px 0 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.play-btn {
+  background: var(--accent-color);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.play-btn:hover {
+  background: #ff4d4d;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 900px) {
+  .playlist-container {
+    margin-left: 0; /* sidebar overlays */
+  }
+  .music-strip img {
+    width: 50px;
+    height: 50px;
+  }
+  .song-info h4 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .playlist-container {
+    padding: 10px;
+  }
+  .music-strip {
+    padding: 8px 10px;
+  }
+  .music-strip img {
+    width: 45px;
+    height: 45px;
+  }
+  .song-info h4 {
+    font-size: 0.9rem;
+  }
+  .song-info p {
+    font-size: 0.75rem;
+  }
+  .play-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+/* Footer Styles */
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
+
+.footer .socials a {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Responsive Footer */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+
+    }
+
+    .footer-container h1 {
+        font-size: 18px;
+    }
+
+    .footer-container p,
+    .footer-container ul {
+        font-size: 13px;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 3px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+    
+}
+
+
